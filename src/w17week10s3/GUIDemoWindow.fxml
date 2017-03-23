@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="884.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="w17week10s3.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.5176470588235295" layoutX="208.0" layoutY="134.0" orientation="VERTICAL" prefHeight="682.0" prefWidth="884.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox layoutX="8.0" layoutY="3.0" prefHeight="324.0" prefWidth="853.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="275.0" prefWidth="116.0" spacing="10.0">
+                           <children>
+                              <Label text="Check Boxes">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="pineappleCheckBox" mnemonicParsing="false" text="Pineapple" />
+                              <CheckBox fx:id="baconCheckBox" mnemonicParsing="false" text="Bacon" />
+                              <CheckBox fx:id="cheeseCheckBox" mnemonicParsing="false" text="Cheese" />
+                              <Button fx:id="orderButton" mnemonicParsing="false" onAction="#orderPizzaButtonPushed" text="Order Pizza" />
+                              <Label fx:id="pizzaOrderLabel" alignment="TOP_LEFT" prefHeight="96.0" prefWidth="117.0" text="Label" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="324.0" prefWidth="153.0" spacing="10.0">
+                           <children>
+                              <Label text="ChoiceBox">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+                              <Button fx:id="choiceBoxButton" mnemonicParsing="false" onAction="#choiceBoxButtonPushed" text="Favourite Fruit" />
+                              <Label fx:id="choiceBoxOutputLabel" text="Label" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="293.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
